@@ -1,9 +1,7 @@
 console.log('\'Allo \'Allo!');
 
-// Uncomment to enable Bootstrap tooltips
-// https://getbootstrap.com/docs/4.0/components/tooltips/#example-enable-tooltips-everywhere
-// $(function () { $('[data-toggle="tooltip"]').tooltip(); });
-
-// Uncomment to enable Bootstrap popovers
-// https://getbootstrap.com/docs/4.0/components/popovers/#example-enable-popovers-everywhere
-// $(function () { $('[data-toggle="popover"]').popover(); });
+$('.menu_trigger').click(function(){
+  console.log("Clicked");
+// Within the header element, points towards the .menu class, then the ul element inside of it.
+  $('header .menu  ul').addClass('d-block');
+});
